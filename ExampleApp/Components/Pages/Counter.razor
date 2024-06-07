@@ -1,0 +1,26 @@
+﻿@page "/counter"
+@using ExampleApp.Components.Layout
+@inject IStringLocalizer<AppResource> Localizer
+
+<h1>@Localizer["Counter"]</h1>
+
+<p role="status">Current count: @currentCount</p>
+
+<button class="btn btn-primary" @onclick="IncrementCount">Click me</button>
+
+@code {
+    private int currentCount = 0;
+
+    protected override void OnInitialized()
+    {
+        base.OnInitialized();
+        MainLayout.ChangeTitle(AppResource.Counter);
+    }
+
+    private void IncrementCount()
+    {
+        currentCount++;
+    }
+
+
+}

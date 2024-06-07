@@ -1,0 +1,24 @@
+﻿@page "/"
+@using ExampleApp.Components.Layout
+@inject IStringLocalizer<AppResource> Localizer
+
+<FluentStack Orientation="Orientation.Vertical"
+             HorizontalAlignment="@HorizontalAlignment.Center"
+             VerticalAlignment="@VerticalAlignment.Center"
+             VerticalGap="20">
+    <h1>@Localizer["HelloWorld"]</h1>
+    <p>@Localizer["WelcomeMessage"]</p>
+
+</FluentStack>
+
+@code {
+
+    protected override void OnInitialized()
+    {
+        base.OnInitialized();
+        MainLayout.ChangeTitle(AppResource.Home);
+    }
+
+}
+
+

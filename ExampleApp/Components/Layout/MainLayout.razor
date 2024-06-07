@@ -1,0 +1,49 @@
+﻿@using ExampleApp.Components
+@using System.Runtime.InteropServices
+@inherits LayoutComponentBase
+@inject IStringLocalizer<AppResource> Localizer
+
+<div>
+    <FluentLayout>
+        <HeaderMenu />
+        <FluentStack Class="body-stack" Orientation="Orientation.Horizontal" Width="100%" HorizontalGap="0">
+            @if (showMenu)
+            {
+                <NavMenu />
+            }
+
+            <FluentBodyContent id="body-content" Style="height: calc(100dvh - 90px);">
+                <div class="content">
+                    <article id="article">
+                        <FluentMessageBarProvider Section="@MESSAGES_TOP" />
+
+                        @Body
+
+                    </article>
+                    <aside>
+                        A side
+
+                    </aside>
+
+                    <FluentToastProvider MaxToastCount="10" />
+                    <FluentDialogProvider />
+                    <FluentTooltipProvider />
+                    <FluentKeyCodeProvider />
+
+                </div>
+            </FluentBodyContent>
+        </FluentStack>
+
+        <FluentFooter Style="@("height: 40px; color: white;  font-size: var(--type-ramp-minus-1-font-size); line-height: var(--type-ramp-base-line-height);")">
+            <div class="version">
+                Version: @_version
+                &nbsp;-&nbsp;
+                <a href="https://github.com/barbarossa426/net-maui-fluent-ui">Powered by @RuntimeInformation.FrameworkDescription net-maui-fluent-ui</a>
+            </div>
+            <FluentSpacer />
+            <div class="copy">
+                MIT © 2024. Free to use for all.
+            </div>
+        </FluentFooter>
+    </FluentLayout>
+</div>

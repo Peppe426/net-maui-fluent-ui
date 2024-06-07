@@ -1,0 +1,28 @@
+﻿@inject IDialogService DialogService
+@inject IStringLocalizer<AppResource> Localizer
+
+<FluentHeader Class="site-header">
+    <div class="site-header__left">
+        <a href="/" aria-label="Back to the homepage">
+            <img src="logo.png" alt="Example app logo" width="40px" height="40px" />
+        </a>
+    </div>
+    <FluentSpacer />
+    <div class="site-header__center">
+        <h3>@Title</h3>
+    </div>
+    <FluentSpacer />
+    <div class="site-header__right">
+        @* <h3>Settings</h3> *@
+        @* <h3>@Localizer["Settings"]</h3> *@
+
+
+        <FluentButton BackgroundColor="var(--neutral-layer-4)" OnClick="OpenSiteSettingsAsync" Title="Site settings">
+            <FluentIcon Value="@(new Icons.Regular.Size20.Settings())" Color="Color.Neutral" Title="Site" />
+        </FluentButton>
+    </div>
+</FluentHeader>
+
+@code {
+
+}

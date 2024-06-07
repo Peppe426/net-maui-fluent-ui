@@ -1,0 +1,72 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Package
+  xmlns="http://schemas.microsoft.com/appx/manifest/foundation/windows10"
+  xmlns:uap="http://schemas.microsoft.com/appx/manifest/uap/windows10"
+  xmlns:mp="http://schemas.microsoft.com/appx/2014/phone/manifest"
+  xmlns:rescap="http://schemas.microsoft.com/appx/manifest/foundation/windows10/restrictedcapabilities"
+  IgnorableNamespaces="uap rescap">
+
+	<Identity Name="maui-package-name-placeholder" Publisher="CN=User Name" Version="1.0.0.0" />
+
+	<mp:PhoneIdentity PhoneProductId="AD011F1A-BE27-433D-9EB3-7A12CA29ECCB" PhonePublisherId="00000000-0000-0000-0000-000000000000" />
+
+	<Properties>
+		<DisplayName>$placeholder$</DisplayName>
+		<PublisherDisplayName>Peter Liljeholm</PublisherDisplayName>
+		<Logo>$placeholder$.png</Logo>
+	</Properties>
+
+	<Dependencies>
+		<TargetDeviceFamily Name="Windows.Universal" MinVersion="10.0.17763.0" MaxVersionTested="10.0.19041.0" />
+		<TargetDeviceFamily Name="Windows.Desktop" MinVersion="10.0.17763.0" MaxVersionTested="10.0.19041.0" />
+	</Dependencies>
+
+	<Resources>
+		<Resource Language="en-US" />
+		<!--English (United States) -->
+		<Resource Language="de-DE" />
+		<!-- German (Germany) -->
+		<Resource Language="es-ES" />
+		<!--Spanish (Spain) -->
+		<Resource Language="fr-FR" />
+		<!--French (France) -->
+		<Resource Language="ja-JP" />
+		<!--Japanese (Japan) -->
+		<Resource Language="pt-BR" />
+		<!--Portuguese (Brazil) -->
+		<Resource Language="pt-PT" />
+		<!--Portuguese (Portugal) -->
+		<Resource Language="ru-RU" />
+		<!--Russian (Russia) -->
+		<Resource Language="zh-CN" />
+		<!--Chinese (China) -->
+		<Resource Language="zh-TW" />
+		<!--Chinese (Taiwan) -->
+		<Resource Language="sv-SE" />
+		<!--Swedish (Sweden) -->
+		<Resource Language="nb-NO" />
+		<!--Norwegian Bokmål (Norway) -->
+		<Resource Language="da-DK" />
+		<!--Danish (Denmark) -->
+		<Resource Language="fi-FI" />
+		<!--Finnish (Finland) -->
+	</Resources>
+
+	<Applications>
+		<Application Id="App" Executable="$targetnametoken$.exe" EntryPoint="$targetentrypoint$">
+			<uap:VisualElements
+			  DisplayName="$placeholder$"
+			  Description="$placeholder$"
+			  Square150x150Logo="$placeholder$.png"
+			  Square44x44Logo="$placeholder$.png"
+			  BackgroundColor="transparent">
+				<uap:DefaultTile Square71x71Logo="$placeholder$.png" Wide310x150Logo="$placeholder$.png" Square310x310Logo="$placeholder$.png" />
+				<uap:SplashScreen Image="$placeholder$.png" />
+			</uap:VisualElements>
+		</Application>
+	</Applications>
+
+	<Capabilities>
+		<rescap:Capability Name="runFullTrust" />
+	</Capabilities>
+</Package>
