@@ -5,6 +5,7 @@ namespace ExampleApp.Infrastructure;
 public static class CultureInfoService
 {
     public static string LANGUAGE_PREFERENCE = "language";
+
     public static event Action? CultureChanged;
 
     public static CultureInfo[] Cultures =

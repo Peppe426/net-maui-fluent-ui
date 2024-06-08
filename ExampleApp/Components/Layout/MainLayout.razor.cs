@@ -1,23 +1,24 @@
-﻿using Microsoft.AspNetCore.Components.Routing;
+﻿using ExampleApp.Infrastructure;
 using Microsoft.AspNetCore.Components;
+using Microsoft.AspNetCore.Components.Routing;
 using Microsoft.JSInterop;
-using ExampleApp.Infrastructure;
 
 namespace ExampleApp.Components.Layout;
 
 public partial class MainLayout : IDisposable
 {
-    private const string JAVASCRIPT_FILE = "./_content/ExampleApp.Components/Layout/MainLayout.razor.js";
+    public static event Action<string>? TitleChanged;
+
     public const string MESSAGES_NOTIFICATION_CENTER = "NOTIFICATION_CENTER";
     public const string MESSAGES_TOP = "TOP";
     public const string MESSAGES_DIALOG = "DIALOG";
     public const string MESSAGES_CARD = "CARD";
+    private const string JAVASCRIPT_FILE = "./_content/ExampleApp.Components/Layout/MainLayout.razor.js";
     private string? _version;
     private bool _mobile;
     private string? _prevUri;
     private bool _menuChecked = true;
     private bool showMenu = true;
-    public static event Action<string>? TitleChanged;
 
     [Inject]
     private NavigationManager NavigationManager { get; set; } = default!;
@@ -43,8 +44,9 @@ public partial class MainLayout : IDisposable
                 _menuChecked = false;
                 StateHasChanged();
             }
-        }              
+        }
     }
+
     public static void ChangeTitle(string newTitle)
     {
         TitleChanged?.Invoke(newTitle);

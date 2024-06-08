@@ -1,16 +1,11 @@
 ﻿using ExampleApp.Infrastructure;
 using ExampleApp.Resources.Languages;
 using Microsoft.AspNetCore.Components;
-using Microsoft.Extensions.Logging;
 using Microsoft.FluentUI.AspNetCore.Components;
 using Microsoft.FluentUI.AspNetCore.Components.Extensions;
-using System;
-using System.Collections.Generic;
 using System.Globalization;
-using System.Linq;
 using System.Resources;
 using System.Text;
-using System.Threading.Tasks;
 
 namespace ExampleApp.Components.Panels
 {

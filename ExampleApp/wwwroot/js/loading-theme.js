@@ -3,7 +3,6 @@
 // When it is, we'll remove this invisibility from the body.
 
 class LoadingTheme extends HTMLElement {
-
     className = "hidden-body";
     defaultDarkColor = "#272727";
     defaultLightColor = "#fbfbfb";
@@ -17,7 +16,6 @@ class LoadingTheme extends HTMLElement {
 
     // Custom element added to page.
     connectedCallback() {
-
         // If LocalStorage is not available, do nothing.
         if (localStorage == null) {
             return;
@@ -60,7 +58,6 @@ class LoadingTheme extends HTMLElement {
 
         document.body.classList.add(this.className);
 
-
         // Add a <fluent-design-theme mode="dark|light" /> sub-element
         // Do not add the "storage-name"" to avoid unwanted local storage.
         const designTheme = document.createElement("fluent-design-theme");
@@ -77,7 +74,6 @@ class LoadingTheme extends HTMLElement {
 
     // Attributes has changed.
     attributeChangedCallback(name, oldValue, newValue) {
-
     }
 }
 
