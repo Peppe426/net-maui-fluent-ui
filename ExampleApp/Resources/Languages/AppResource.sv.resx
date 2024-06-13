@@ -117,27 +117,27 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <data name="Greetings" xml:space="preserve">
-    <value>Välkommen till</value>
-  </data>
-  <data name="Settings" xml:space="preserve">
-    <value>Inställningar</value>
+  <data name="HelloWorld" xml:space="preserve">
+    <value>Hej världen</value>
   </data>
   <data name="SiteSettings" xml:space="preserve">
     <value>Webbplatsinställningar</value>
   </data>
-  <data name="HelloWorld" xml:space="preserve">
-    <value>Hej världen</value>
+  <data name="Settings" xml:space="preserve">
+    <value>Inställningar</value>
+  </data>
+  <data name="Greetings" xml:space="preserve">
+    <value>Välkommen till</value>
   </data>
   <data name="WelcomeMessage" xml:space="preserve">
     <value>Välkommen till din nya app.</value>
   </data>
+  <data name="Home" xml:space="preserve">
+    <value>Hem</value>
+  </data>
   <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
   <data name="flag" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\flags\sv.svg;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="Home" xml:space="preserve">
-    <value>Hem</value>
   </data>
   <data name="Weather" xml:space="preserve">
     <value>Väder</value>
@@ -147,5 +147,11 @@
   </data>
   <data name="ShowDataDemonstration" xml:space="preserve">
     <value>Den här komponenten demonstrerar hur man kan hämta och hantera data.</value>
+  </data>
+  <data name="ExpandedMenuGroup" xml:space="preserve">
+    <value>Expanderat menyalternativ</value>
+  </data>
+  <data name="FoldedMenuGroup" xml:space="preserve">
+    <value>Ihopfällt menyalternativ</value>
   </data>
 </root>

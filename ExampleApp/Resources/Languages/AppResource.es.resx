@@ -117,27 +117,27 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <data name="Greetings" xml:space="preserve">
-    <value>Bienvenido a</value>
-  </data>
-  <data name="Settings" xml:space="preserve">
-    <value>Ajustes</value>
+  <data name="HelloWorld" xml:space="preserve">
+    <value>Hola Mundo</value>
   </data>
   <data name="SiteSettings" xml:space="preserve">
     <value>Configuración del sitio</value>
   </data>
-  <data name="HelloWorld" xml:space="preserve">
-    <value>Hola Mundo</value>
+  <data name="Settings" xml:space="preserve">
+    <value>Ajustes</value>
+  </data>
+  <data name="Greetings" xml:space="preserve">
+    <value>Bienvenido a</value>
   </data>
   <data name="WelcomeMessage" xml:space="preserve">
     <value>Bienvenido a tu nueva aplicación.</value>
   </data>
+  <data name="Home" xml:space="preserve">
+    <value>Inicio</value>
+  </data>
   <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
   <data name="flag" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\flags\es.svg;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="Home" xml:space="preserve">
-    <value>Inicio</value>
   </data>
   <data name="Weather" xml:space="preserve">
     <value>Tiempo</value>
@@ -147,5 +147,11 @@
   </data>
   <data name="ShowDataDemonstration" xml:space="preserve">
     <value>Este componente demuestra cómo mostrar datos.</value>
+  </data>
+  <data name="ExpandedMenuGroup" xml:space="preserve">
+    <value>Grupo de menú expandido</value>
+  </data>
+  <data name="FoldedMenuGroup" xml:space="preserve">
+    <value>Grupo de menú plegado</value>
   </data>
 </root>

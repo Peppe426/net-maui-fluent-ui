@@ -157,4 +157,12 @@
     <value>Text for weather page demonstration</value>
     <comment>This component demonstrates showing data.</comment>
   </data>
+  <data name="ExpandedMenuGroup" xml:space="preserve">
+    <value>Expanded menu group</value>
+    <comment>Description of the expanded menu item</comment>
+  </data>
+  <data name="FoldedMenuGroup" xml:space="preserve">
+    <value>Folded menu group</value>
+    <comment>Text for the menu item</comment>
+  </data>
 </root>

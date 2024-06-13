@@ -70,12 +70,30 @@ namespace ExampleApp.Resources.Languages {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Expanded menu group.
+        /// </summary>
+        internal static string ExpandedMenuGroup {
+            get {
+                return ResourceManager.GetString("ExpandedMenuGroup", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized resource of type System.Byte[].
         /// </summary>
         internal static byte[] flag {
             get {
                 object obj = ResourceManager.GetObject("flag", resourceCulture);
                 return ((byte[])(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Folded menu group.
+        /// </summary>
+        internal static string FoldedMenuGroup {
+            get {
+                return ResourceManager.GetString("FoldedMenuGroup", resourceCulture);
             }
         }
         
