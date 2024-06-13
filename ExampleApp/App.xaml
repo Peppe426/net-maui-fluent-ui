@@ -5,7 +5,6 @@
              x:Class="ExampleApp.App">
     <Application.Resources>
         <ResourceDictionary>
-
             <Color x:Key="PageBackgroundColor">#512bdf</Color>
             <Color x:Key="PrimaryTextColor">White</Color>
 
