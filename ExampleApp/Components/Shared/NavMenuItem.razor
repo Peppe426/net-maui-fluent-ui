@@ -1,0 +1,33 @@
+﻿@switch (Value)
+{
+    case NavGroup group:
+        <FluentNavGroup Expanded="@group.Expanded" Gap="@group.Gap" Icon="@group.Icon">
+            <TitleTemplate>
+                <h4>@group.Title</h4>
+            </TitleTemplate>
+            <ChildContent>
+                @foreach (var item in group.Children)
+                {
+                    <NavMenuItem Value="item" />
+                }
+            </ChildContent>
+        </FluentNavGroup>
+        break;
+    case NavLink:
+        <FluentNavLink Icon="@Value.Icon" Href="@Value.Href" Match="@Value.Match">
+            @if (Value.Match is NavLinkMatch.All)
+            {
+                <h4>@Value.Title</h4>
+            }
+            else
+            {
+                @Value.Title
+            }
+        </FluentNavLink>
+        break;
+}
+
+@code {
+    [Parameter, EditorRequired]
+    public required NavItem Value { get; set; }
+}
