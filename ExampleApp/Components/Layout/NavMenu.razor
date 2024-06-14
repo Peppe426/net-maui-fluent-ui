@@ -1,8 +1,13 @@
 ﻿@using ExampleApp.Components.Shared
 
-<FluentNavMenu Width="250" Title="Main menu">
-    @foreach (var item in NavMenuItems)
-    {
-        <NavMenuItem Value="item" />
-    }
-</FluentNavMenu>
+<div class="navmenu">
+    <nav class="main-nav">
+
+        <FluentNavMenu Width="250" Title="Main menu">
+            @foreach (var item in NavMenuItems)
+            {
+                <NavMenuItem Value="item" />
+            }
+        </FluentNavMenu>
+    </nav>
+</div>

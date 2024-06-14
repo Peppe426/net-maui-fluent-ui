@@ -23,21 +23,126 @@
     display: block;
 }
 
-.fluent-nav-menu {
-    /*display: none;*/
-    background-color: lime;
+.main-nav {
+    background-color: var(--neutral-layer-1);
 }
 
-@media (min-width: 641px) {
-    .navbar-toggler {
+#navmenu-toggle {
+    display: none;
+}
+
+.navmenu-icon {
+    display: none;
+}
+
+#navmenu-toggle:checked > nav {
+    width: 0px;
+}
+
+[dir="rtl"] #navmenu-toggle:checked ~ nav {
+    right: 0px;
+}
+
+nav.sitenav {
+    background-color: var(--neutral-layer-1);
+    padding: 1.5rem 1rem;
+    height: calc(100dvh - 90px);
+    width: 18rem;
+    overflow-y: auto;
+}
+
+nav h2 {
+    font-size: var(--type-ramp-plus-1-font-size);
+    line-height: var(--type-ramp-plus-1-line-height);
+    padding: 15px 0;
+    margin: 0;
+    pointer-events: none;
+}
+
+nav h3 {
+    font-size: var(--type-ramp-base-font-size);
+    line-height: var(--type-ramp-minus-1-line-height);
+    padding: 10px 0;
+    margin: 0;
+    pointer-events: none;
+}
+
+nav fluent-anchor {
+    width: 100%;
+    color: var(--fill-color);
+}
+
+    nav fluent-anchor::part(control) {
+        justify-content: start;
+        background: var(--accent-fill-rest);
+    }
+
+.fluent-nav-link.notactive .fluent-nav-text {
+    font-weight: 600 !important;
+}
+
+@media (max-width: 767px) {
+    nav.sitenav {
+        width: 100%;
+        height: calc(100dvh - 50px);
+    }
+
+    .navmenu {
+        width: 100%;
+    }
+
+    #navmenu-toggle {
+        appearance: none;
+    }
+
+    .navmenu-icon {
+        cursor: pointer;
+        z-index: 10;
+        display: block;
+        position: absolute;
+        top: 15px;
+        left: unset;
+        right: 20px;
+        width: 20px;
+        height: 20px;
+        border: none;
+    }
+
+    [dir="rtl"] .navmenu-icon {
+        left: 20px;
+        right: unset
+    }
+
+    #navmenu-toggle ~ nav {
         display: none;
     }
 
-    .nav-scrollable {
-        /* Never collapse the sidebar for wide screens */
+    #navmenu-toggle:checked ~ nav {
         display: block;
-        /* Allow sidebar to scroll for tall menus */
-        height: calc(100vh - 3.5rem);
-        overflow-y: auto;
+    }
+
+    #navmenu-toggle ~ article {
+        display: block;
+    }
+
+    #navmenu-toggle:checked ~ article {
+        display: none;
+    }
+
+    @media screen and (max-width: 767px) and (orientation: landscape) {
+        nav {
+            padding: 25px 40px;
+        }
+
+            nav ul {
+                margin: 0 0;
+            }
+    }
+}
+
+@media (horizontal-viewport-segments: 2) {
+    nav {
+        grid-column: 1;
+        width: env(viewport-segment-width 0 0) !important;
     }
 }

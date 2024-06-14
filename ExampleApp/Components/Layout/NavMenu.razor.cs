@@ -22,7 +22,7 @@ public partial class NavMenu
             new NavLink(
                 href: "/",
                 match: NavLinkMatch.All,
-                icon: new Icons.Regular.Size24.Home(),
+                icon: new Icons.Regular.Size28.Home(),
                 title: AppResource.Home
             ),
 
@@ -35,13 +35,13 @@ public partial class NavMenu
                 [
                     new NavLink(
                         href: "/counter",
-                        icon: new Icons.Regular.Size24.Calculator(),
+                        icon: new Icons.Regular.Size20.Calculator(),
                         title: AppResource.Counter
                     ),
 
                     new NavLink(
                         href: "/weather",
-                        icon: new Icons.Regular.Size24.Cloud(),
+                        icon: new Icons.Regular.Size20.Cloud(),
                         title: AppResource.Weather
                     ),
 
@@ -54,13 +54,13 @@ public partial class NavMenu
                         [
                             new NavLink(
                             href: "/counter",
-                            icon: new Icons.Regular.Size24.Calculator(),
+                            icon: new Icons.Regular.Size20.Calculator(),
                             title: AppResource.Counter
                             ),
 
                             new NavLink(
                                 href: "/weather",
-                                icon: new Icons.Regular.Size24.Cloud(),
+                                icon: new Icons.Regular.Size20.Cloud(),
                                 title: AppResource.Weather
                             ),
                         ]
