@@ -62,3 +62,53 @@
         margin-left: 0;
         margin-right: 10px;
     }
+
+#navmenu-toggle {
+    display: none;
+}
+
+.navmenu-icon {
+    display: none;
+}
+
+#navmenu-toggle:checked > nav {
+    width: 0px;
+}
+
+[dir="rtl"] #navmenu-toggle:checked ~ nav {
+    right: 0px;
+}
+
+@media (max-width: 767px) {
+    body {
+        color: lime;
+    }
+
+    #navmenu-toggle {
+        display: block;
+    }
+
+    .navmenu-icon {
+        display: block;
+    }
+
+    #navmenu-toggle {
+        appearance: none;
+    }
+
+        #navmenu-toggle ~ nav {
+            display: none;
+        }
+
+        #navmenu-toggle:checked ~ nav {
+            display: block;
+        }
+
+        #navmenu-toggle ~ article {
+            display: block;
+        }
+
+        #navmenu-toggle:checked ~ article {
+            display: none;
+        }
+}

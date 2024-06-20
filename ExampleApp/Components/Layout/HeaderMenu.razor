@@ -16,8 +16,9 @@
         @* <h3>Settings</h3> *@
         @* <h3>@Localizer["Settings"]</h3> *@
 
-
-        <FluentButton BackgroundColor="var(--neutral-layer-4)" OnClick="OpenSiteSettingsAsync" Title="Site settings">
+        <input type="checkbox" title="@Localizer["MenuExpandCollapse"]" id="navmenu-toggle" class="navmenu-icon" />
+        <label for="navmenu-toggle" class="navmenu-icon"><FluentIcon Value="@(new Icons.Regular.Size20.Navigation())" Color="Color.Fill" /></label>
+        <FluentButton OnClick="OpenSiteSettingsAsync" Title="Site settings" ButtonAppearance="@Appearance.Stealth">
             <FluentIcon Value="@(new Icons.Regular.Size20.Settings())" Color="Color.Neutral" Title="Site" />
         </FluentButton>
     </div>

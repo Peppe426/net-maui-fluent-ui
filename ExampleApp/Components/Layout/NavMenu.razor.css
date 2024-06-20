@@ -27,27 +27,11 @@
     background-color: var(--neutral-layer-1);
 }
 
-#navmenu-toggle {
-    display: none;
-}
-
-.navmenu-icon {
-    display: none;
-}
-
-#navmenu-toggle:checked > nav {
-    width: 0px;
-}
-
-[dir="rtl"] #navmenu-toggle:checked ~ nav {
-    right: 0px;
-}
-
 nav.sitenav {
     background-color: var(--neutral-layer-1);
     padding: 1.5rem 1rem;
     height: calc(100dvh - 90px);
-    width: 18rem;
+    /*width: 18rem;*/
     overflow-y: auto;
 }
 
@@ -81,18 +65,25 @@ nav fluent-anchor {
     font-weight: 600 !important;
 }
 
+.navmenu {
+    width: min-content;
+    padding-left: 1rem;
+}
+
+    .navmenu .main-nav {
+        width: max-content;
+        max-height: calc(100vh - 50px);
+        overflow-y: scroll;
+        overflow-x: hidden;
+    }
+
 @media (max-width: 767px) {
     nav.sitenav {
-        width: 100%;
         height: calc(100dvh - 50px);
     }
 
-    .navmenu {
-        width: 100%;
-    }
-
-    #navmenu-toggle {
-        appearance: none;
+    .navmenu .main-nav {
+        /*background-color: lime;*/
     }
 
     .navmenu-icon {
@@ -111,32 +102,6 @@ nav fluent-anchor {
     [dir="rtl"] .navmenu-icon {
         left: 20px;
         right: unset
-    }
-
-    #navmenu-toggle ~ nav {
-        display: none;
-    }
-
-    #navmenu-toggle:checked ~ nav {
-        display: block;
-    }
-
-    #navmenu-toggle ~ article {
-        display: block;
-    }
-
-    #navmenu-toggle:checked ~ article {
-        display: none;
-    }
-
-    @media screen and (max-width: 767px) and (orientation: landscape) {
-        nav {
-            padding: 25px 40px;
-        }
-
-            nav ul {
-                margin: 0 0;
-            }
     }
 }
 

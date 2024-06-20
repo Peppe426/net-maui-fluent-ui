@@ -35,16 +35,15 @@ public partial class NavMenu
                 [
                     new NavLink(
                         href: "/counter",
-                        icon: new Icons.Regular.Size20.Calculator(),
+                        icon: new Icons.Regular.Size20.NumberSymbolSquare(),
                         title: AppResource.Counter
                     ),
 
                     new NavLink(
                         href: "/weather",
-                        icon: new Icons.Regular.Size20.Cloud(),
+                        icon: new Icons.Regular.Size20.WeatherDrizzle(),
                         title: AppResource.Weather
                     ),
-
                     new NavGroup(
                         icon: new Icons.Regular.Size24.SettingsCogMultiple(),
                         title: AppResource.FoldedMenuGroup,
