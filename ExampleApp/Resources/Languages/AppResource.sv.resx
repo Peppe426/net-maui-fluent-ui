@@ -154,4 +154,7 @@
   <data name="FoldedMenuGroup" xml:space="preserve">
     <value>Ihopfällt menyalternativ</value>
   </data>
+  <data name="MenuExpandCollapse" xml:space="preserve">
+    <value>Visa eller dölj meny</value>
+  </data>
 </root>

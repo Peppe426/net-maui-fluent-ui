@@ -165,4 +165,8 @@
     <value>Folded menu group</value>
     <comment>Text for the menu item</comment>
   </data>
+  <data name="MenuExpandCollapse" xml:space="preserve">
+    <value>Menu expand/collapse toggle</value>
+    <comment>title for menu toggle button in header menu</comment>
+  </data>
 </root>

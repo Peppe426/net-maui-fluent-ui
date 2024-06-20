@@ -125,6 +125,15 @@ namespace ExampleApp.Resources.Languages {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Menu expand/collapse toggle.
+        /// </summary>
+        internal static string MenuExpandCollapse {
+            get {
+                return ResourceManager.GetString("MenuExpandCollapse", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Settings.
         /// </summary>
         internal static string Settings {
